@@ -5,6 +5,4 @@ Feature: Test Web Actions
 
 Scenario: Sign Up
 
-    Given ll try to login
-    When If I dont have an account, complete the Sign Up
-    Then After Sign up, Sign in
+    Given I navigate to demoblaze
