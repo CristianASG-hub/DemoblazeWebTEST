@@ -54,7 +54,8 @@ public class BasePage {
     public static void  closeBrowser(){
         driver.quit();
     }
-    public static void  FullW(){
+
+    public static void  fullWindowSize(){
         driver.manage().window().maximize();
     }
 

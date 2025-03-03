@@ -16,10 +16,12 @@ import pages.BasePage;
 
 
 public class TestRunner {
+
     @BeforeClass
-    public static void WindowFull(){
-        BasePage.FullW();
+    public static void  fullWindow(){
+        BasePage.fullWindowSize();
     }
+      
     @AfterClass
 
     public static void closeDriver(){

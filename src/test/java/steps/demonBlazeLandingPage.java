@@ -1,6 +1,7 @@
 package steps;
  
 import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import pages.PaginaPrincipal;
  
@@ -13,9 +14,10 @@ public class demonBlazeLandingPage {
         landingPage.navigateToFreeRangeTesters();
     }
 
-     @When("I go to {word} using navigation bar")
+     @Then("^I go to (.+) using navigation bar$")
     public void navigationBarUse(String section) {
         landingPage.clickOnSectionNavigationBar(section);
     }
+    
  
 }
