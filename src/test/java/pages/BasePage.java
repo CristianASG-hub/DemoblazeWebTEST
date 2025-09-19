@@ -65,7 +65,14 @@ public class BasePage {
         return wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(locator)));
     
     }
+    private WebElement FindCss(String locator){
+        return wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector(locator)));
+
+    }
  
+    public void clickElementCss(String locator){
+        FindCss(locator).click();
+    }
     public void clickElement(String locator){
         Find(locator).click();
     }

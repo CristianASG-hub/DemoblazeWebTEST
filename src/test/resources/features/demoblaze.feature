@@ -3,15 +3,14 @@ Feature: Test Web Actions
     We are going to test every actions you can do in the webpage.
 
 
-    Scenario: Navigate through demoblaze
+  Scenario Outline: Navigate through demoblaze
+    Given I navigate to demoblaze
+    Then I go to <section> using navigation bar
+    Examples:
+      | section  |
+      | Sign up  |
 
-        Given I navigate to demoblaze
-        Then I go to <section> using navigation bar
-        Examples:
-            | section  |
-            | Home     |
-            | Contact  |
-            | About us |
-            | Cart     |
-            | Log in   |
-            | Sign up  |
+    Scenario: Click on the celullar picture
+       Given I navigate to demoblaze
+       Then I go to Phones categories
+       Then Click on the first picture of the categorie
