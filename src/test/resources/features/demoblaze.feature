@@ -3,7 +3,7 @@ Feature: Test Web Actions
     We are going to test every actions you can do in the webpage.
 
 
-  Scenario Outline: Navigate through demoblaze
+  Scenario Outline: Navigate through demoblaz
     Given I navigate to demoblaze
     Then I go to <section> using navigation bar
     Examples:
